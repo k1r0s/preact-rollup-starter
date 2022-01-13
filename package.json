@@ -20,9 +20,9 @@
     "rollup-watch": "4.3.1"
   },
   "scripts": {
-    "build": "rollup -c config/prod.js",
-    "dev": "rollup -c config/dev.js -w",
-    "serve": "browser-sync start -s html -f html --no-open --no-ui --no-notify",
+    "build": "rollup -c env/prod.js",
+    "dev": "rollup -c env/dev.js -w",
+    "serve": "browser-sync start -s static -f static --no-open --no-ui --no-notify",
     "start": "npm-run-all --parallel dev serve"
   }
 }

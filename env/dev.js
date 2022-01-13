@@ -6,7 +6,7 @@ import replace from "@rollup/plugin-replace";
 export default {
   input: "src/index.jsx",
   output: {
-    file: "html/app.js",
+    file: "static/app.js",
     format: "iife",
     sourcemap: true
   },
