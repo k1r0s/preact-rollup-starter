@@ -1,5 +1,5 @@
 {
-  "name": "preact-pwa-minimal",
+  "name": "preact-rollup-starter",
   "version": "0.0.0",
   "dependencies": {
     "functional-stylesheet": "file:functional-stylesheet-0.1.0.tgz",
@@ -13,6 +13,8 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-replace": "^3.0.0",
     "browser-sync": "^2.27.7",
+    "jslint": "^0.12.1",
+    "lint-staged": "^12.1.7",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.60.2",
     "rollup-plugin-string": "^3.0.0",
@@ -23,6 +25,11 @@
     "build": "rollup -c env/prod.js",
     "dev": "rollup -c env/dev.js -w",
     "serve": "browser-sync start -s static -f static --no-open --no-ui --no-notify",
-    "start": "npm-run-all --parallel dev serve"
+    "start": "npm-run-all --parallel dev serve",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint --fix"
   }
 }
