@@ -1,3 +1,5 @@
 /build
 /node_modules
 yarn-error.log
+/static/app.js
+/static/app.js.map
