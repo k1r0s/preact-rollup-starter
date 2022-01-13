@@ -1,0 +1,4 @@
+service workers
+  https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+  https://web.dev/offline-cookbook/
+
