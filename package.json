@@ -30,6 +30,6 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": "eslint --fix"
+    "*.{js,jsx}": "eslint --fix"
   }
 }
